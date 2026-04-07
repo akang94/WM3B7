@@ -77,3 +77,94 @@
 2026-04-07 19:35:55,568 INFO - Adopting or resetting orphaned tasks for active dag runs
 2026-04-07 19:40:55,705 INFO - Adopting or resetting orphaned tasks for active dag runs
 2026-04-07 19:45:55,776 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 19:50:55,915 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 19:55:56,060 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 19:56:44,185 INFO - Exiting gracefully upon receiving signal 15
+2026-04-07 19:56:44,908 INFO - Sending 15 to group 9871. PIDs of all processes in the group: []
+2026-04-07 19:56:44,910 INFO - Sending the signal 15 to group 9871
+2026-04-07 19:56:44,912 INFO - Sending the signal 15 to process 9871 as process group is missing.
+2026-04-07 19:56:44,913 INFO - Sending 15 to group 9871. PIDs of all processes in the group: []
+2026-04-07 19:56:44,914 INFO - Sending the signal 15 to group 9871
+2026-04-07 19:56:44,915 INFO - Sending the signal 15 to process 9871 as process group is missing.
+2026-04-07 19:56:44,916 INFO - Exited execute loop
+2026-04-07 19:57:03,405 INFO - Loaded executor: SequentialExecutor
+2026-04-07 19:57:03,446 INFO - Starting the scheduler
+2026-04-07 19:57:03,447 INFO - Processing each file at most -1 times
+2026-04-07 19:57:03,455 INFO - Launched DagFileProcessorManager with pid: 45674
+2026-04-07 19:57:03,457 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 19:57:03,464 INFO - Configured default timezone UTC
+2026-04-07 20:02:03,620 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 20:07:03,761 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 20:12:03,896 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 20:17:04,155 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 20:22:04,290 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 20:27:04,424 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 20:28:53,050 INFO - 1 tasks up for execution:
+	<TaskInstance: coinbase_etl_pipeline.t1_extract manual__2026-04-07T20:28:51+00:00 [scheduled]>
+2026-04-07 20:28:53,051 INFO - DAG coinbase_etl_pipeline has 0/16 running and queued tasks
+2026-04-07 20:28:53,051 INFO - Setting the following tasks to queued state:
+	<TaskInstance: coinbase_etl_pipeline.t1_extract manual__2026-04-07T20:28:51+00:00 [scheduled]>
+2026-04-07 20:28:53,053 INFO - Trying to enqueue tasks: [<TaskInstance: coinbase_etl_pipeline.t1_extract manual__2026-04-07T20:28:51+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2026-04-07 20:28:53,054 INFO - Sending TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t1_extract', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 6 and queue default
+2026-04-07 20:28:53,054 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't1_extract', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+2026-04-07 20:28:53,057 INFO - Executing command: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't1_extract', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+2026-04-07 20:28:57,708 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t1_extract', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1)
+2026-04-07 20:28:57,714 INFO - TaskInstance Finished: dag_id=coinbase_etl_pipeline, task_id=t1_extract, run_id=manual__2026-04-07T20:28:51+00:00, map_index=-1, run_start_date=2026-04-07 20:28:56.614094+00:00, run_end_date=2026-04-07 20:28:56.985242+00:00, run_duration=0.371148, state=success, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, job_id=12, pool=default_pool, queue=default, priority_weight=6, operator=PythonOperator, queued_dttm=2026-04-07 20:28:53.052337+00:00, queued_by_job_id=11, pid=61135
+2026-04-07 20:28:58,068 INFO - 1 tasks up for execution:
+	<TaskInstance: coinbase_etl_pipeline.t2_clean manual__2026-04-07T20:28:51+00:00 [scheduled]>
+2026-04-07 20:28:58,069 INFO - DAG coinbase_etl_pipeline has 0/16 running and queued tasks
+2026-04-07 20:28:58,069 INFO - Setting the following tasks to queued state:
+	<TaskInstance: coinbase_etl_pipeline.t2_clean manual__2026-04-07T20:28:51+00:00 [scheduled]>
+2026-04-07 20:28:58,070 INFO - Trying to enqueue tasks: [<TaskInstance: coinbase_etl_pipeline.t2_clean manual__2026-04-07T20:28:51+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2026-04-07 20:28:58,071 INFO - Sending TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t2_clean', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 5 and queue default
+2026-04-07 20:28:58,071 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't2_clean', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+2026-04-07 20:28:58,074 INFO - Executing command: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't2_clean', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+2026-04-07 20:29:02,496 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t2_clean', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1)
+2026-04-07 20:29:02,500 INFO - TaskInstance Finished: dag_id=coinbase_etl_pipeline, task_id=t2_clean, run_id=manual__2026-04-07T20:28:51+00:00, map_index=-1, run_start_date=2026-04-07 20:29:01.544789+00:00, run_end_date=2026-04-07 20:29:01.746474+00:00, run_duration=0.201685, state=success, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, job_id=13, pool=default_pool, queue=default, priority_weight=5, operator=PythonOperator, queued_dttm=2026-04-07 20:28:58.070114+00:00, queued_by_job_id=11, pid=61188
+2026-04-07 20:29:02,752 INFO - 1 tasks up for execution:
+	<TaskInstance: coinbase_etl_pipeline.t3_join manual__2026-04-07T20:28:51+00:00 [scheduled]>
+2026-04-07 20:29:02,752 INFO - DAG coinbase_etl_pipeline has 0/16 running and queued tasks
+2026-04-07 20:29:02,752 INFO - Setting the following tasks to queued state:
+	<TaskInstance: coinbase_etl_pipeline.t3_join manual__2026-04-07T20:28:51+00:00 [scheduled]>
+2026-04-07 20:29:02,753 INFO - Trying to enqueue tasks: [<TaskInstance: coinbase_etl_pipeline.t3_join manual__2026-04-07T20:28:51+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2026-04-07 20:29:02,754 INFO - Sending TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t3_join', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 4 and queue default
+2026-04-07 20:29:02,754 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't3_join', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+2026-04-07 20:29:02,757 INFO - Executing command: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't3_join', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+2026-04-07 20:29:07,437 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t3_join', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1)
+2026-04-07 20:29:07,442 INFO - TaskInstance Finished: dag_id=coinbase_etl_pipeline, task_id=t3_join, run_id=manual__2026-04-07T20:28:51+00:00, map_index=-1, run_start_date=2026-04-07 20:29:06.150551+00:00, run_end_date=2026-04-07 20:29:06.883010+00:00, run_duration=0.732459, state=success, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, job_id=14, pool=default_pool, queue=default, priority_weight=4, operator=PythonOperator, queued_dttm=2026-04-07 20:29:02.753144+00:00, queued_by_job_id=11, pid=61217
+2026-04-07 20:29:07,691 INFO - 1 tasks up for execution:
+	<TaskInstance: coinbase_etl_pipeline.t4_transform manual__2026-04-07T20:28:51+00:00 [scheduled]>
+2026-04-07 20:29:07,691 INFO - DAG coinbase_etl_pipeline has 0/16 running and queued tasks
+2026-04-07 20:29:07,692 INFO - Setting the following tasks to queued state:
+	<TaskInstance: coinbase_etl_pipeline.t4_transform manual__2026-04-07T20:28:51+00:00 [scheduled]>
+2026-04-07 20:29:07,693 INFO - Trying to enqueue tasks: [<TaskInstance: coinbase_etl_pipeline.t4_transform manual__2026-04-07T20:28:51+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2026-04-07 20:29:07,693 INFO - Sending TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t4_transform', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 3 and queue default
+2026-04-07 20:29:07,694 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't4_transform', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+2026-04-07 20:29:07,697 INFO - Executing command: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't4_transform', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+2026-04-07 20:29:12,795 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t4_transform', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1)
+2026-04-07 20:29:12,799 INFO - TaskInstance Finished: dag_id=coinbase_etl_pipeline, task_id=t4_transform, run_id=manual__2026-04-07T20:28:51+00:00, map_index=-1, run_start_date=2026-04-07 20:29:11.373832+00:00, run_end_date=2026-04-07 20:29:12.169072+00:00, run_duration=0.79524, state=success, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, job_id=15, pool=default_pool, queue=default, priority_weight=3, operator=PythonOperator, queued_dttm=2026-04-07 20:29:07.692509+00:00, queued_by_job_id=11, pid=61272
+2026-04-07 20:29:14,563 INFO - 1 tasks up for execution:
+	<TaskInstance: coinbase_etl_pipeline.t5_load manual__2026-04-07T20:28:51+00:00 [scheduled]>
+2026-04-07 20:29:14,564 INFO - DAG coinbase_etl_pipeline has 0/16 running and queued tasks
+2026-04-07 20:29:14,564 INFO - Setting the following tasks to queued state:
+	<TaskInstance: coinbase_etl_pipeline.t5_load manual__2026-04-07T20:28:51+00:00 [scheduled]>
+2026-04-07 20:29:14,565 INFO - Trying to enqueue tasks: [<TaskInstance: coinbase_etl_pipeline.t5_load manual__2026-04-07T20:28:51+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2026-04-07 20:29:14,566 INFO - Sending TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t5_load', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 2 and queue default
+2026-04-07 20:29:14,566 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't5_load', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+2026-04-07 20:29:14,569 INFO - Executing command: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't5_load', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+2026-04-07 20:29:19,114 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t5_load', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1)
+2026-04-07 20:29:19,124 INFO - TaskInstance Finished: dag_id=coinbase_etl_pipeline, task_id=t5_load, run_id=manual__2026-04-07T20:28:51+00:00, map_index=-1, run_start_date=2026-04-07 20:29:18.001879+00:00, run_end_date=2026-04-07 20:29:18.412570+00:00, run_duration=0.410691, state=success, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, job_id=16, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2026-04-07 20:29:14.565096+00:00, queued_by_job_id=11, pid=61310
+2026-04-07 20:29:19,279 INFO - 1 tasks up for execution:
+	<TaskInstance: coinbase_etl_pipeline.t6_visualise manual__2026-04-07T20:28:51+00:00 [scheduled]>
+2026-04-07 20:29:19,280 INFO - DAG coinbase_etl_pipeline has 0/16 running and queued tasks
+2026-04-07 20:29:19,280 INFO - Setting the following tasks to queued state:
+	<TaskInstance: coinbase_etl_pipeline.t6_visualise manual__2026-04-07T20:28:51+00:00 [scheduled]>
+2026-04-07 20:29:19,281 INFO - Trying to enqueue tasks: [<TaskInstance: coinbase_etl_pipeline.t6_visualise manual__2026-04-07T20:28:51+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2026-04-07 20:29:19,281 INFO - Sending TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t6_visualise', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 1 and queue default
+2026-04-07 20:29:19,282 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't6_visualise', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+2026-04-07 20:29:19,285 INFO - Executing command: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't6_visualise', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+2026-04-07 20:29:25,211 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t6_visualise', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1)
+2026-04-07 20:29:25,215 INFO - TaskInstance Finished: dag_id=coinbase_etl_pipeline, task_id=t6_visualise, run_id=manual__2026-04-07T20:28:51+00:00, map_index=-1, run_start_date=2026-04-07 20:29:22.749457+00:00, run_end_date=2026-04-07 20:29:24.510195+00:00, run_duration=1.760738, state=success, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, job_id=17, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2026-04-07 20:29:19.280792+00:00, queued_by_job_id=11, pid=61358
+2026-04-07 20:29:25,367 INFO - Marking run <DagRun coinbase_etl_pipeline @ 2026-04-07 20:28:51+00:00: manual__2026-04-07T20:28:51+00:00, state:running, queued_at: 2026-04-07 20:28:51.394045+00:00. externally triggered: True> successful
+2026-04-07 20:29:25,368 INFO - DagRun Finished: dag_id=coinbase_etl_pipeline, execution_date=2026-04-07 20:28:51+00:00, run_id=manual__2026-04-07T20:28:51+00:00, run_start_date=2026-04-07 20:28:53.017754+00:00, run_end_date=2026-04-07 20:29:25.368473+00:00, run_duration=32.350719, state=success, external_trigger=True, run_type=manual, data_interval_start=2026-04-07 20:28:51+00:00, data_interval_end=2026-04-07 20:28:51+00:00, dag_hash=78db773d8475f6e7f5e011f7627f36de
+2026-04-07 20:32:04,765 INFO - Adopting or resetting orphaned tasks for active dag runs

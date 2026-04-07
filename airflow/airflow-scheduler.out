@@ -1,19 +1,140 @@
-[2026-04-07T18:50:54.088+0000] {executor_loader.py:254} INFO - Loaded executor: SequentialExecutor
-[2026-04-07T18:50:54.147+0000] {scheduler_job_runner.py:950} INFO - Starting the scheduler
-[2026-04-07T18:50:54.148+0000] {scheduler_job_runner.py:957} INFO - Processing each file at most -1 times
-[2026-04-07T18:50:54.192+0000] {manager.py:174} INFO - Launched DagFileProcessorManager with pid: 9871
-[2026-04-07T18:50:54.194+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
-[2026-04-07T18:50:54.197+0000] {settings.py:63} INFO - Configured default timezone UTC
-[2026-04-07T18:50:54.206+0000] {scheduler_job_runner.py:1972} INFO - Marked 1 SchedulerJob instances as failed
-[2026-04-07T18:50:54.228+0000] {manager.py:406} WARNING - Because we cannot use more than 1 thread (parsing_processes = 2) when using sqlite. So we set parallelism to 1.
-[2026-04-07T18:55:54.351+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
-[2026-04-07T19:00:54.486+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
-[2026-04-07T19:05:54.728+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
-[2026-04-07T19:10:54.875+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
-[2026-04-07T19:15:54.890+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
-[2026-04-07T19:20:55.027+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
-[2026-04-07T19:25:55.164+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
-[2026-04-07T19:30:55.402+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
-[2026-04-07T19:35:55.568+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
-[2026-04-07T19:40:55.705+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
-[2026-04-07T19:45:55.776+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2026-04-07T19:57:03.405+0000] {executor_loader.py:254} INFO - Loaded executor: SequentialExecutor
+[2026-04-07T19:57:03.446+0000] {scheduler_job_runner.py:950} INFO - Starting the scheduler
+[2026-04-07T19:57:03.447+0000] {scheduler_job_runner.py:957} INFO - Processing each file at most -1 times
+[2026-04-07T19:57:03.455+0000] {manager.py:174} INFO - Launched DagFileProcessorManager with pid: 45674
+[2026-04-07T19:57:03.457+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2026-04-07T19:57:03.464+0000] {settings.py:63} INFO - Configured default timezone UTC
+[2026-04-07T19:57:03.500+0000] {manager.py:406} WARNING - Because we cannot use more than 1 thread (parsing_processes = 2) when using sqlite. So we set parallelism to 1.
+[2026-04-07T20:02:03.620+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2026-04-07T20:07:03.761+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2026-04-07T20:12:03.896+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2026-04-07T20:17:04.155+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2026-04-07T20:22:04.290+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2026-04-07T20:27:04.424+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+Dag run  in running state
+Dag information Queued at: 2026-04-07 20:28:51.394045+00:00 hash info: 78db773d8475f6e7f5e011f7627f36de
+[2026-04-07T20:28:53.050+0000] {scheduler_job_runner.py:435} INFO - 1 tasks up for execution:
+	<TaskInstance: coinbase_etl_pipeline.t1_extract manual__2026-04-07T20:28:51+00:00 [scheduled]>
+[2026-04-07T20:28:53.051+0000] {scheduler_job_runner.py:507} INFO - DAG coinbase_etl_pipeline has 0/16 running and queued tasks
+[2026-04-07T20:28:53.051+0000] {scheduler_job_runner.py:646} INFO - Setting the following tasks to queued state:
+	<TaskInstance: coinbase_etl_pipeline.t1_extract manual__2026-04-07T20:28:51+00:00 [scheduled]>
+[2026-04-07T20:28:53.053+0000] {scheduler_job_runner.py:748} INFO - Trying to enqueue tasks: [<TaskInstance: coinbase_etl_pipeline.t1_extract manual__2026-04-07T20:28:51+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+[2026-04-07T20:28:53.054+0000] {scheduler_job_runner.py:692} INFO - Sending TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t1_extract', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 6 and queue default
+[2026-04-07T20:28:53.054+0000] {base_executor.py:169} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't1_extract', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+[2026-04-07T20:28:53.057+0000] {sequential_executor.py:84} INFO - Executing command: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't1_extract', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+[2026-04-07T20:28:54.574+0000] {dagbag.py:588} INFO - Filling up the DagBag from /workspaces/WM3B7/airflow/dags/coinbase_etl_dag.py
+[2026-04-07T20:28:56.277+0000] {example_kubernetes_executor.py:39} WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+[2026-04-07T20:28:56.325+0000] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/workspaces/WM3B7/.venv/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2026-04-07T20:28:56.326+0000] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2026-04-07T20:28:56.465+0000] {task_command.py:467} INFO - Running <TaskInstance: coinbase_etl_pipeline.t1_extract manual__2026-04-07T20:28:51+00:00 [queued]> on host codespaces-47c82f
+[2026-04-07T20:28:57.708+0000] {scheduler_job_runner.py:776} INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t1_extract', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1)
+[2026-04-07T20:28:57.714+0000] {scheduler_job_runner.py:813} INFO - TaskInstance Finished: dag_id=coinbase_etl_pipeline, task_id=t1_extract, run_id=manual__2026-04-07T20:28:51+00:00, map_index=-1, run_start_date=2026-04-07 20:28:56.614094+00:00, run_end_date=2026-04-07 20:28:56.985242+00:00, run_duration=0.371148, state=success, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, job_id=12, pool=default_pool, queue=default, priority_weight=6, operator=PythonOperator, queued_dttm=2026-04-07 20:28:53.052337+00:00, queued_by_job_id=11, pid=61135
+[2026-04-07T20:28:58.068+0000] {scheduler_job_runner.py:435} INFO - 1 tasks up for execution:
+	<TaskInstance: coinbase_etl_pipeline.t2_clean manual__2026-04-07T20:28:51+00:00 [scheduled]>
+[2026-04-07T20:28:58.069+0000] {scheduler_job_runner.py:507} INFO - DAG coinbase_etl_pipeline has 0/16 running and queued tasks
+[2026-04-07T20:28:58.069+0000] {scheduler_job_runner.py:646} INFO - Setting the following tasks to queued state:
+	<TaskInstance: coinbase_etl_pipeline.t2_clean manual__2026-04-07T20:28:51+00:00 [scheduled]>
+[2026-04-07T20:28:58.070+0000] {scheduler_job_runner.py:748} INFO - Trying to enqueue tasks: [<TaskInstance: coinbase_etl_pipeline.t2_clean manual__2026-04-07T20:28:51+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+[2026-04-07T20:28:58.071+0000] {scheduler_job_runner.py:692} INFO - Sending TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t2_clean', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 5 and queue default
+[2026-04-07T20:28:58.071+0000] {base_executor.py:169} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't2_clean', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+[2026-04-07T20:28:58.074+0000] {sequential_executor.py:84} INFO - Executing command: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't2_clean', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+[2026-04-07T20:28:59.601+0000] {dagbag.py:588} INFO - Filling up the DagBag from /workspaces/WM3B7/airflow/dags/coinbase_etl_dag.py
+[2026-04-07T20:29:01.263+0000] {example_kubernetes_executor.py:39} WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+[2026-04-07T20:29:01.310+0000] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/workspaces/WM3B7/.venv/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2026-04-07T20:29:01.310+0000] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2026-04-07T20:29:01.380+0000] {task_command.py:467} INFO - Running <TaskInstance: coinbase_etl_pipeline.t2_clean manual__2026-04-07T20:28:51+00:00 [queued]> on host codespaces-47c82f
+[2026-04-07T20:29:02.496+0000] {scheduler_job_runner.py:776} INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t2_clean', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1)
+[2026-04-07T20:29:02.500+0000] {scheduler_job_runner.py:813} INFO - TaskInstance Finished: dag_id=coinbase_etl_pipeline, task_id=t2_clean, run_id=manual__2026-04-07T20:28:51+00:00, map_index=-1, run_start_date=2026-04-07 20:29:01.544789+00:00, run_end_date=2026-04-07 20:29:01.746474+00:00, run_duration=0.201685, state=success, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, job_id=13, pool=default_pool, queue=default, priority_weight=5, operator=PythonOperator, queued_dttm=2026-04-07 20:28:58.070114+00:00, queued_by_job_id=11, pid=61188
+[2026-04-07T20:29:02.752+0000] {scheduler_job_runner.py:435} INFO - 1 tasks up for execution:
+	<TaskInstance: coinbase_etl_pipeline.t3_join manual__2026-04-07T20:28:51+00:00 [scheduled]>
+[2026-04-07T20:29:02.752+0000] {scheduler_job_runner.py:507} INFO - DAG coinbase_etl_pipeline has 0/16 running and queued tasks
+[2026-04-07T20:29:02.752+0000] {scheduler_job_runner.py:646} INFO - Setting the following tasks to queued state:
+	<TaskInstance: coinbase_etl_pipeline.t3_join manual__2026-04-07T20:28:51+00:00 [scheduled]>
+[2026-04-07T20:29:02.753+0000] {scheduler_job_runner.py:748} INFO - Trying to enqueue tasks: [<TaskInstance: coinbase_etl_pipeline.t3_join manual__2026-04-07T20:28:51+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+[2026-04-07T20:29:02.754+0000] {scheduler_job_runner.py:692} INFO - Sending TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t3_join', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 4 and queue default
+[2026-04-07T20:29:02.754+0000] {base_executor.py:169} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't3_join', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+[2026-04-07T20:29:02.757+0000] {sequential_executor.py:84} INFO - Executing command: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't3_join', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+[2026-04-07T20:29:04.224+0000] {dagbag.py:588} INFO - Filling up the DagBag from /workspaces/WM3B7/airflow/dags/coinbase_etl_dag.py
+[2026-04-07T20:29:05.891+0000] {example_kubernetes_executor.py:39} WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+[2026-04-07T20:29:05.950+0000] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/workspaces/WM3B7/.venv/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2026-04-07T20:29:05.950+0000] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2026-04-07T20:29:06.011+0000] {task_command.py:467} INFO - Running <TaskInstance: coinbase_etl_pipeline.t3_join manual__2026-04-07T20:28:51+00:00 [queued]> on host codespaces-47c82f
+[2026-04-07T20:29:07.437+0000] {scheduler_job_runner.py:776} INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t3_join', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1)
+[2026-04-07T20:29:07.442+0000] {scheduler_job_runner.py:813} INFO - TaskInstance Finished: dag_id=coinbase_etl_pipeline, task_id=t3_join, run_id=manual__2026-04-07T20:28:51+00:00, map_index=-1, run_start_date=2026-04-07 20:29:06.150551+00:00, run_end_date=2026-04-07 20:29:06.883010+00:00, run_duration=0.732459, state=success, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, job_id=14, pool=default_pool, queue=default, priority_weight=4, operator=PythonOperator, queued_dttm=2026-04-07 20:29:02.753144+00:00, queued_by_job_id=11, pid=61217
+[2026-04-07T20:29:07.691+0000] {scheduler_job_runner.py:435} INFO - 1 tasks up for execution:
+	<TaskInstance: coinbase_etl_pipeline.t4_transform manual__2026-04-07T20:28:51+00:00 [scheduled]>
+[2026-04-07T20:29:07.691+0000] {scheduler_job_runner.py:507} INFO - DAG coinbase_etl_pipeline has 0/16 running and queued tasks
+[2026-04-07T20:29:07.692+0000] {scheduler_job_runner.py:646} INFO - Setting the following tasks to queued state:
+	<TaskInstance: coinbase_etl_pipeline.t4_transform manual__2026-04-07T20:28:51+00:00 [scheduled]>
+[2026-04-07T20:29:07.693+0000] {scheduler_job_runner.py:748} INFO - Trying to enqueue tasks: [<TaskInstance: coinbase_etl_pipeline.t4_transform manual__2026-04-07T20:28:51+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+[2026-04-07T20:29:07.693+0000] {scheduler_job_runner.py:692} INFO - Sending TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t4_transform', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 3 and queue default
+[2026-04-07T20:29:07.694+0000] {base_executor.py:169} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't4_transform', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+[2026-04-07T20:29:07.697+0000] {sequential_executor.py:84} INFO - Executing command: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't4_transform', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+[2026-04-07T20:29:09.454+0000] {dagbag.py:588} INFO - Filling up the DagBag from /workspaces/WM3B7/airflow/dags/coinbase_etl_dag.py
+[2026-04-07T20:29:11.089+0000] {example_kubernetes_executor.py:39} WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+[2026-04-07T20:29:11.143+0000] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/workspaces/WM3B7/.venv/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2026-04-07T20:29:11.144+0000] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2026-04-07T20:29:11.203+0000] {task_command.py:467} INFO - Running <TaskInstance: coinbase_etl_pipeline.t4_transform manual__2026-04-07T20:28:51+00:00 [queued]> on host codespaces-47c82f
+[2026-04-07T20:29:12.795+0000] {scheduler_job_runner.py:776} INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t4_transform', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1)
+[2026-04-07T20:29:12.799+0000] {scheduler_job_runner.py:813} INFO - TaskInstance Finished: dag_id=coinbase_etl_pipeline, task_id=t4_transform, run_id=manual__2026-04-07T20:28:51+00:00, map_index=-1, run_start_date=2026-04-07 20:29:11.373832+00:00, run_end_date=2026-04-07 20:29:12.169072+00:00, run_duration=0.79524, state=success, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, job_id=15, pool=default_pool, queue=default, priority_weight=3, operator=PythonOperator, queued_dttm=2026-04-07 20:29:07.692509+00:00, queued_by_job_id=11, pid=61272
+[2026-04-07T20:29:14.563+0000] {scheduler_job_runner.py:435} INFO - 1 tasks up for execution:
+	<TaskInstance: coinbase_etl_pipeline.t5_load manual__2026-04-07T20:28:51+00:00 [scheduled]>
+[2026-04-07T20:29:14.564+0000] {scheduler_job_runner.py:507} INFO - DAG coinbase_etl_pipeline has 0/16 running and queued tasks
+[2026-04-07T20:29:14.564+0000] {scheduler_job_runner.py:646} INFO - Setting the following tasks to queued state:
+	<TaskInstance: coinbase_etl_pipeline.t5_load manual__2026-04-07T20:28:51+00:00 [scheduled]>
+[2026-04-07T20:29:14.565+0000] {scheduler_job_runner.py:748} INFO - Trying to enqueue tasks: [<TaskInstance: coinbase_etl_pipeline.t5_load manual__2026-04-07T20:28:51+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+[2026-04-07T20:29:14.566+0000] {scheduler_job_runner.py:692} INFO - Sending TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t5_load', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 2 and queue default
+[2026-04-07T20:29:14.566+0000] {base_executor.py:169} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't5_load', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+[2026-04-07T20:29:14.569+0000] {sequential_executor.py:84} INFO - Executing command: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't5_load', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+[2026-04-07T20:29:16.135+0000] {dagbag.py:588} INFO - Filling up the DagBag from /workspaces/WM3B7/airflow/dags/coinbase_etl_dag.py
+[2026-04-07T20:29:17.753+0000] {example_kubernetes_executor.py:39} WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+[2026-04-07T20:29:17.800+0000] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/workspaces/WM3B7/.venv/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2026-04-07T20:29:17.800+0000] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2026-04-07T20:29:17.864+0000] {task_command.py:467} INFO - Running <TaskInstance: coinbase_etl_pipeline.t5_load manual__2026-04-07T20:28:51+00:00 [queued]> on host codespaces-47c82f
+[2026-04-07T20:29:19.114+0000] {scheduler_job_runner.py:776} INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t5_load', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1)
+[2026-04-07T20:29:19.124+0000] {scheduler_job_runner.py:813} INFO - TaskInstance Finished: dag_id=coinbase_etl_pipeline, task_id=t5_load, run_id=manual__2026-04-07T20:28:51+00:00, map_index=-1, run_start_date=2026-04-07 20:29:18.001879+00:00, run_end_date=2026-04-07 20:29:18.412570+00:00, run_duration=0.410691, state=success, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, job_id=16, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2026-04-07 20:29:14.565096+00:00, queued_by_job_id=11, pid=61310
+[2026-04-07T20:29:19.279+0000] {scheduler_job_runner.py:435} INFO - 1 tasks up for execution:
+	<TaskInstance: coinbase_etl_pipeline.t6_visualise manual__2026-04-07T20:28:51+00:00 [scheduled]>
+[2026-04-07T20:29:19.280+0000] {scheduler_job_runner.py:507} INFO - DAG coinbase_etl_pipeline has 0/16 running and queued tasks
+[2026-04-07T20:29:19.280+0000] {scheduler_job_runner.py:646} INFO - Setting the following tasks to queued state:
+	<TaskInstance: coinbase_etl_pipeline.t6_visualise manual__2026-04-07T20:28:51+00:00 [scheduled]>
+[2026-04-07T20:29:19.281+0000] {scheduler_job_runner.py:748} INFO - Trying to enqueue tasks: [<TaskInstance: coinbase_etl_pipeline.t6_visualise manual__2026-04-07T20:28:51+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+[2026-04-07T20:29:19.281+0000] {scheduler_job_runner.py:692} INFO - Sending TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t6_visualise', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 1 and queue default
+[2026-04-07T20:29:19.282+0000] {base_executor.py:169} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't6_visualise', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+[2026-04-07T20:29:19.285+0000] {sequential_executor.py:84} INFO - Executing command: ['airflow', 'tasks', 'run', 'coinbase_etl_pipeline', 't6_visualise', 'manual__2026-04-07T20:28:51+00:00', '--local', '--subdir', 'DAGS_FOLDER/coinbase_etl_dag.py']
+[2026-04-07T20:29:20.876+0000] {dagbag.py:588} INFO - Filling up the DagBag from /workspaces/WM3B7/airflow/dags/coinbase_etl_dag.py
+[2026-04-07T20:29:22.464+0000] {example_kubernetes_executor.py:39} WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+[2026-04-07T20:29:22.511+0000] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/workspaces/WM3B7/.venv/lib/python3.12/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2026-04-07T20:29:22.512+0000] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2026-04-07T20:29:22.579+0000] {task_command.py:467} INFO - Running <TaskInstance: coinbase_etl_pipeline.t6_visualise manual__2026-04-07T20:28:51+00:00 [queued]> on host codespaces-47c82f
+[2026-04-07T20:29:25.211+0000] {scheduler_job_runner.py:776} INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='coinbase_etl_pipeline', task_id='t6_visualise', run_id='manual__2026-04-07T20:28:51+00:00', try_number=1, map_index=-1)
+[2026-04-07T20:29:25.215+0000] {scheduler_job_runner.py:813} INFO - TaskInstance Finished: dag_id=coinbase_etl_pipeline, task_id=t6_visualise, run_id=manual__2026-04-07T20:28:51+00:00, map_index=-1, run_start_date=2026-04-07 20:29:22.749457+00:00, run_end_date=2026-04-07 20:29:24.510195+00:00, run_duration=1.760738, state=success, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=1, job_id=17, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2026-04-07 20:29:19.280792+00:00, queued_by_job_id=11, pid=61358
+[2026-04-07T20:29:25.367+0000] {dagrun.py:854} INFO - Marking run <DagRun coinbase_etl_pipeline @ 2026-04-07 20:28:51+00:00: manual__2026-04-07T20:28:51+00:00, state:running, queued_at: 2026-04-07 20:28:51.394045+00:00. externally triggered: True> successful
+Dag run in success state
+Dag run start:2026-04-07 20:28:53.017754+00:00 end:2026-04-07 20:29:25.368473+00:00
+[2026-04-07T20:29:25.368+0000] {dagrun.py:905} INFO - DagRun Finished: dag_id=coinbase_etl_pipeline, execution_date=2026-04-07 20:28:51+00:00, run_id=manual__2026-04-07T20:28:51+00:00, run_start_date=2026-04-07 20:28:53.017754+00:00, run_end_date=2026-04-07 20:29:25.368473+00:00, run_duration=32.350719, state=success, external_trigger=True, run_type=manual, data_interval_start=2026-04-07 20:28:51+00:00, data_interval_end=2026-04-07 20:28:51+00:00, dag_hash=78db773d8475f6e7f5e011f7627f36de
+[2026-04-07T20:32:04.765+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
