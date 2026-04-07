@@ -1,0 +1,68 @@
+2026-03-25 15:25:50,609 INFO - Loaded executor: SequentialExecutor
+2026-03-25 15:25:50,649 INFO - Starting the scheduler
+2026-03-25 15:25:50,650 INFO - Processing each file at most -1 times
+2026-03-25 15:25:50,720 INFO - Launched DagFileProcessorManager with pid: 38638
+2026-03-25 15:25:50,722 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-03-25 15:25:50,727 INFO - Configured default timezone UTC
+2026-03-25 15:25:50,737 INFO - Marked 1 SchedulerJob instances as failed
+2026-03-25 15:30:50,891 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-03-25 15:35:51,033 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-03-25 15:40:51,169 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-03-25 15:45:51,191 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-03-25 15:50:51,288 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-03-25 15:55:51,428 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-06 14:02:08,826 INFO - Loaded executor: SequentialExecutor
+2026-04-06 14:02:08,872 INFO - Starting the scheduler
+2026-04-06 14:02:08,873 INFO - Processing each file at most -1 times
+2026-04-06 14:02:08,978 INFO - Launched DagFileProcessorManager with pid: 3082
+2026-04-06 14:02:08,979 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-06 14:02:08,983 INFO - Configured default timezone UTC
+2026-04-06 14:02:08,991 INFO - Marked 1 SchedulerJob instances as failed
+2026-04-06 14:07:09,136 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-06 14:12:09,273 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-06 14:17:09,429 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-06 14:22:09,564 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-06 14:27:09,700 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-06 14:32:09,836 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-06 14:37:09,981 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 14:52:01,337 INFO - Loaded executor: SequentialExecutor
+2026-04-07 14:52:01,406 INFO - Starting the scheduler
+2026-04-07 14:52:01,407 INFO - Processing each file at most -1 times
+2026-04-07 14:52:01,510 INFO - Launched DagFileProcessorManager with pid: 3855
+2026-04-07 14:52:01,513 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 14:52:01,516 INFO - Configured default timezone UTC
+2026-04-07 14:52:01,530 INFO - Marked 1 SchedulerJob instances as failed
+2026-04-07 14:57:01,689 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 15:02:01,827 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 15:07:01,930 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 15:12:02,071 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 15:17:02,209 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 15:22:02,265 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 15:27:02,405 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 15:32:02,544 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 15:37:18,816 INFO - Loaded executor: SequentialExecutor
+2026-04-07 15:37:18,853 INFO - Starting the scheduler
+2026-04-07 15:37:18,854 INFO - Processing each file at most -1 times
+2026-04-07 15:37:18,863 INFO - Launched DagFileProcessorManager with pid: 2966
+2026-04-07 15:37:18,865 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 15:37:18,877 INFO - Marked 1 SchedulerJob instances as failed
+2026-04-07 15:37:18,882 INFO - Configured default timezone UTC
+2026-04-07 15:42:18,997 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 15:47:19,133 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 15:52:19,269 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 15:57:19,405 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 16:02:19,543 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 16:07:19,681 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 16:12:19,820 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 16:17:19,960 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 16:22:20,099 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 16:27:20,234 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 16:32:20,370 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 16:37:20,512 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 18:50:54,088 INFO - Loaded executor: SequentialExecutor
+2026-04-07 18:50:54,147 INFO - Starting the scheduler
+2026-04-07 18:50:54,148 INFO - Processing each file at most -1 times
+2026-04-07 18:50:54,192 INFO - Launched DagFileProcessorManager with pid: 9871
+2026-04-07 18:50:54,194 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 18:50:54,197 INFO - Configured default timezone UTC
+2026-04-07 18:50:54,206 INFO - Marked 1 SchedulerJob instances as failed
