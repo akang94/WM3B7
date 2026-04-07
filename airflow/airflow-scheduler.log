@@ -66,3 +66,11 @@
 2026-04-07 18:50:54,194 INFO - Adopting or resetting orphaned tasks for active dag runs
 2026-04-07 18:50:54,197 INFO - Configured default timezone UTC
 2026-04-07 18:50:54,206 INFO - Marked 1 SchedulerJob instances as failed
+2026-04-07 18:55:54,351 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 19:00:54,486 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 19:05:54,728 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 19:10:54,875 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 19:15:54,890 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 19:20:55,027 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 19:25:55,164 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 19:30:55,402 INFO - Adopting or resetting orphaned tasks for active dag runs

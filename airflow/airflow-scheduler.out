@@ -6,3 +6,11 @@
 [2026-04-07T18:50:54.197+0000] {settings.py:63} INFO - Configured default timezone UTC
 [2026-04-07T18:50:54.206+0000] {scheduler_job_runner.py:1972} INFO - Marked 1 SchedulerJob instances as failed
 [2026-04-07T18:50:54.228+0000] {manager.py:406} WARNING - Because we cannot use more than 1 thread (parsing_processes = 2) when using sqlite. So we set parallelism to 1.
+[2026-04-07T18:55:54.351+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2026-04-07T19:00:54.486+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2026-04-07T19:05:54.728+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2026-04-07T19:10:54.875+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2026-04-07T19:15:54.890+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2026-04-07T19:20:55.027+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2026-04-07T19:25:55.164+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2026-04-07T19:30:55.402+0000] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
