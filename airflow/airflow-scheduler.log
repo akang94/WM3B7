@@ -168,3 +168,4 @@
 2026-04-07 20:29:25,367 INFO - Marking run <DagRun coinbase_etl_pipeline @ 2026-04-07 20:28:51+00:00: manual__2026-04-07T20:28:51+00:00, state:running, queued_at: 2026-04-07 20:28:51.394045+00:00. externally triggered: True> successful
 2026-04-07 20:29:25,368 INFO - DagRun Finished: dag_id=coinbase_etl_pipeline, execution_date=2026-04-07 20:28:51+00:00, run_id=manual__2026-04-07T20:28:51+00:00, run_start_date=2026-04-07 20:28:53.017754+00:00, run_end_date=2026-04-07 20:29:25.368473+00:00, run_duration=32.350719, state=success, external_trigger=True, run_type=manual, data_interval_start=2026-04-07 20:28:51+00:00, data_interval_end=2026-04-07 20:28:51+00:00, dag_hash=78db773d8475f6e7f5e011f7627f36de
 2026-04-07 20:32:04,765 INFO - Adopting or resetting orphaned tasks for active dag runs
+2026-04-07 20:37:04,900 INFO - Adopting or resetting orphaned tasks for active dag runs
